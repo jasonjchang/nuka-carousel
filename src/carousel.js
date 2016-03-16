@@ -302,7 +302,7 @@ Carousel = React.createClass({
     if (this.clickSafe === true) {
       e.preventDefault();
       e.stopPropagation();
-      
+
       if (e.nativeEvent) {
         e.nativeEvent.stopPropagation();
       }
@@ -592,11 +592,11 @@ Carousel = React.createClass({
 
   getFrameStyles() {
     return {
-      position: 'relative',
+      position: 'absolute',
       display: 'block',
       overflow: 'hidden',
-      height: this.props.vertical ? this.state.frameWidth || 'initial' : 'auto',
-      margin: this.props.framePadding,
+      height: 100%,
+      margin: 0,
       padding: 0,
       transform: 'translate3d(0, 0, 0)',
       WebkitTransform: 'translate3d(0, 0, 0)',
